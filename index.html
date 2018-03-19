@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/beige.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/atom-one-dark.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!-- Twitter embed -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Ladies Explain...the Blockchain!</h2>
+          <h3>Thanks to our sponsor Lincoln Financial Group!</h3>
+          <img src="images/lfg-logo-2x.png" alt="Lincoln Financial Group logo" class="illustration">
+        </section>
+        <section>
+          <h2>Technology affects everyone</h2>
+          <h4>It should include everyone.</h4>
+          <img src="images/nyt-bitcoin-bros.jpg" alt="bitcoin bros in dumb sweaters" class="illustration" style="height: 450px;">
+          <aside class="notes">
+            <p>Not just these guys or people who look like these guys.</p>
+            <p>It's why we're doing this talk. </p>
+          </aside>
+        </section>
+        <section>
+          <h2>This was me until about 3 weeks ago</h2>
+          <div class="tweet--embed">
+            <blockquote class="twitter-tweet" data-lang="en">
+              <p lang="en" dir="ltr">I hope Bitcoin is like Snapchat in that people stop talking about it before I have to learn what it is.</p>&mdash; Josh
+              Gondelman (@joshgondelman)
+              <a href="https://twitter.com/joshgondelman/status/941061623929700354?ref_src=twsrc%5Etfw">December 13, 2017</a>
+            </blockquote>
+          </div>
+        </section>
+        <section>
+          <h2>What we'll talk about tonight</h2>
+            <ul>
+              <li>What is a blockchain?</li>
+              <li>Why the technology is important</li>
+              <li>History and where we are today</li>
+              <li>What might happen with blockchain in the future?</li>
+              <li>How does a blockchain work, exactly? (CODE!)</li>
+            </ul>
+        </section>
+<!-- HISTORY  -->
+        <section class="history">
+          <section data-markdown>
+            <textarea data-template>
+              ## History
+            </textarea>
+          </section>
+          <section>
+            <h2>Hamster Dance stage</h2>
+            <p>Blockchain is still about possibilities yet to be implemented</p>
+            <iframe src="https://giphy.com/embed/Zod2xmX6al1Fm" width="480" height="228" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <p>
+              <a href="https://giphy.com/gifs/Zod2xmX6al1Fm">via GIPHY</a>
+            </p>
+            <aside class="notes">
+              <p>We are still at a really early stage and the possibilites are largely unwritten</p>
+            </aside>
+          </section>
+          <section>
+            <!-- satoshi nakamoto and the bitcoin whitepaper -->
+          </section>
+          <section>
+            <!-- smart contracts and ethereum -->
+          </section>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ],
+        history: true,
+      });
+    </script>
+  </body>
+</html>
