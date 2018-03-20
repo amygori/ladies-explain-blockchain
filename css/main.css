@@ -54,3 +54,8 @@
 	max-height: 400px;
 	word-wrap: normal;
 }
+
+.reveal .logo {
+  border: none;
+  box-shadow: none;
+}
