@@ -28,10 +28,12 @@
   <body>
     <div class="reveal">
       <div class="slides">
+<!-- INTRO -->
         <section>
           <h2>Ladies Explain...the Blockchain!</h2>
-          <h3>Thanks to our sponsor Lincoln Financial Group!</h3>
-          <img src="images/lfg-logo-2x.png" alt="Lincoln Financial Group logo" class="illustration">
+          <h3>Thanks to our hosts and sponsors</h3>
+
+          <img src="images/lfg-logo-2x.png" alt="Lincoln Financial Group logo" >
         </section>
         <section>
           <h2>Technology affects everyone</h2>
@@ -45,69 +47,215 @@
         <section>
           <h2>This was me until about 3 weeks ago</h2>
           <div class="tweet--embed">
-            <blockquote class="twitter-tweet" data-lang="en">
+            <blockquote class="twitter-tweet tw-align-center" data-lang="en">
               <p lang="en" dir="ltr">I hope Bitcoin is like Snapchat in that people stop talking about it before I have to learn what it is.</p>&mdash; Josh
               Gondelman (@joshgondelman)
               <a href="https://twitter.com/joshgondelman/status/941061623929700354?ref_src=twsrc%5Etfw">December 13, 2017</a>
             </blockquote>
           </div>
+          <aside class="notes">
+            <ul>
+              <li>Bitcoin is a cryptocurrency, which we'll talk about only a little tonight.</li>
+              <li>John Oliver recently defined cryptocurrency as "Everything you don't understand about money combined with everything you don't understand about computers."</li>
+              <li>It's just one application of Blockchain.</li>
+              <li>Blockchain is the tech that powers bitcoin, and it is in our opinion the more interesting piece.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h2>Women are getting involved</h2>
+          <img src="images/nyt-headline.png" alt="" style="border:none;">
+          <img src="images/nyt-photo.png" alt="" class="illustration">
+          <aside class="notes">NYT article from Feb 2018</aside>
         </section>
         <section>
           <h2>What we'll talk about tonight</h2>
             <ul>
-              <li>What is a blockchain?</li>
-              <li>Why the technology is important</li>
-              <li>History and where we are today</li>
-              <li>What might happen with blockchain in the future?</li>
-              <li>How does a blockchain work, exactly? (CODE!)</li>
+              <li>History of Blockchain: where did it come from?</li>
+              <li>Basics of Blockchain: what is it?</li>
+              <li>Applications: how is blockchain being used?</li>
+              <li>Code: How does a blockchain work, exactly?</li>
+              <li>Learn more!</li>
             </ul>
-        </section>
-<!-- WHAT IS A BLOCKCHAIN? defining terms -->
-        <section>
-          <h2>DeeDee's content goes here</h2>
         </section>
 <!-- HISTORY  -->
         <section class="history">
           <section>
-            <h1>History and where we are Today</h1>
+            <h1>History of Blockchain Technology</h1>
           </section>
           <section>
             <h2>It's still early days for blockchain</h2>
-            <h4>i.e., Hamster Dance stage</h4>
+            <h4>Hamster Dance stage</h4>
             <iframe src="https://giphy.com/embed/Zod2xmX6al1Fm" width="480" height="228" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <p>
               <a href="https://giphy.com/gifs/Zod2xmX6al1Fm">via GIPHY</a>
             </p>
             <aside class="notes">
-              <p>We are still at a really early stage and the possibilites are largely unwritten. But there are ideas being discussed in a lot of different fields, so let's look at some of them.</p>
+              <p>We are still at a really early stage and the possibilites are largely unwritten. But there are ideas being discussed in a lot of different fields. We're going to look back at how it got started and along the way begin to understand what it is.</p>
             </aside>
           </section>
           <section>
-          <h2>The Whitepaper</h2>
-          <p>Fall 2008</p>
-          <blockquote>
-            <strong>Abstract.</strong> A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party
-            to another without going through a financial institution.
-          </blockquote>
-          <a href="https://bitcoin.org/bitcoin.pdf">The Bitcoin Whitepaper</a>
-            <!-- satoshi nakamoto and the bitcoin whitepaper -->
+             <img src="images/gartner-hype-cycle.jpg" alt="Gartner hype cycle chart" class="illustration-lg">
+            <aside class="notes">IT and business research and advisory firm Gartner charts emerging technologies and assesses where they are in terms of
+              usefuless and viability for business purposes. They do a yearly report of things business leaders should watch, and they
+              chart technologies to identify a sort of lifecycle.</aside>
+          </section>
+          <section>
+            <h2>Bitcoin</h2>
+            <img src="images/bitcoin.png" alt="" class="illustration">
+            <aside class="notes">
+              <p>bitcoin is the first application of blockchain technology. It’s a decentralized currency. Peer-to-peer networks, protocols (how those peers talk to each other) and software combine to make it possible to create and use digital currency.</p>
+            </aside>
+          </section>
+          <section>
+            <h2>Early Ideas</h2>
+            <img src="images/1980s-computer.jpg" alt="" class="illustration">
+            <aside class="notes">
+              <ul>
+                <li>Digital cash as a concept goes back to the early 80s, but there were some persistent problems because a bank still has to keep track (it was centralized)</li>
+                <li>Hashcash was a concept introduced in 1997 as a way to thwart email spam (computational puzzle that increased the effort of sending a single email, making spam too computationally expensive) -- this is the Proof
+                of Work concept that blockchain uses.</li>
+                <li>there were other experimental e-cash systems in the 941061623929700354?ref_src.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>A Decentralized System</h2>
+            <img src="images/decentralized-system.png" alt="centralized, decentralized, and distributed systems diagram" class="illustration" style="height: 400px;">
+            <p class="caption">From a 1964 paper by Paul Baran for the Rand Corporation, <a href="https://www.rand.org/content/dam/rand/pubs/research_memoranda/2006/RM3420.pdf">"On Distributed Communications: Introduction to Distrubuted Communications Networks"</a></p class="caption">
+            </a>
+            <aside class="notes">The main innovation is the use of blockchain for decentralized verification (the push model instead of the pull model for credit cards
+            and other centralized systems).</aside>
+          </section>
+          <section>
+            <h2><a href="https://bitcoin.org/bitcoin.pdf">The Bitcoin Whitepaper</a></h2>
+            <p>"Satoshi Nakamoto", October 31, 2008</p>
+          <img src="images/bitcoin-whitepaper.png" alt="bitcoin whitepaper" class="illustration">
+          <aside class="notes">
+            <p>"A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another
+            without going through a financial institution."</p>
+            <p>bitcoin software becomes available to the public on sourceforge.net in Nov</p>
+          </aside>
+          </section>
+          <section>
+            <h2>The Genesis Block</h2>
+            <h4>Block 0</h4>
+            <p>Mined on Jan 3, 2009</p>
+            <img src="images/genesis-block.png" alt="bitcoin genesis block" class="illustration">
+            <aside class="notes">
+              <ul>
+                <li>This is the first block in any blockchain.</li>
+                <li>A block is just data, that has some particular characteristics that we'll go into in more detail later on.</li>
+                <li>Mining is the process by which this data is verified and added to the chain of what's come before.</li>
+                <li>There is work to be done (PoW) and all the computers on the network race to be the first. </li>
+                <li>“Roughly one new block is created (mined) every 10 minute (sic). Miners are rewarded with new coins if and when they create new
+                blocks and are paid transaction fees in return of including transactions in their blocks. ” Excerpt From: “Mastering Blockchain.”</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h2>Bitcoin Pizza Day</h2>
-            <blockquote class="twitter-tweet" data-lang="en">
-              <p lang="en" dir="ltr">The
-                <a href="https://twitter.com/hashtag/Bitcoin?src=hash&amp;ref_src=twsrc%5Etfw">#Bitcoin</a> pizza is worth $20,509,958 today. (-0.15% from yesterday) Today is Bitcoin pizza day!</p>&mdash; Bitcoin
-              Pizza 🍕 (@bitcoin_pizza)
-              <a href="https://twitter.com/bitcoin_pizza/status/866477230570033157?ref_src=twsrc%5Etfw">May 22, 2017</a>
-            </blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+              <blockquote class="twitter-tweet tw-align-center" data-lang="en">
+                <p lang="en" dir="ltr">The
+                  <a href="https://twitter.com/hashtag/Bitcoin?src=hash&amp;ref_src=twsrc%5Etfw">#Bitcoin</a> pizza is worth $20,509,958 today. (-0.15% from yesterday) Today is Bitcoin pizza day!</p>&mdash; Bitcoin
+                Pizza 🍕 (@bitcoin_pizza)
+                <a href="https://twitter.com/bitcoin_pizza/status/866477230570033157?ref_src=twsrc%5Etfw">May 22, 2017</a>
+              </blockquote>
+            <p>Visit <a href="http://pizzaforcoins.com/">pizzaforcoins.com</a> to find out what pizza joints near you will accept bitcoin!</p>
+            <p>Alternatively, read venture capital firm <a href="http://ledracapital.com/blog/2013/12/28/bitcoin-series-10-why-the-7m-pizza-does-not-matter-aka-how-to-transact-in-bitcoin"> Ledra Capital's analysis of why that expensive pizza does not matter.</a></p>
+            <aside class="notes">
+              <p>2010: Bitcoin is valued for the first time.</p>
+              <p>This is the first public bitcoin purchase where bitcoin are traded with currency value. </p>
+              <p>On 22nd May 2010, Laszlo Hanyecz bought a pizza for 10,000 bitcoins. This is the current USD value of that pizza.</p>
+              <ul>
+                <li>Mt. Gox established on July 17, 2010. </li>
+                <li>Security breach at MtGox in June 2011 results in fraudulent trading and results in the site being shut down for a week</li>
+                <li> By November, the Bitcoin market is valued at over $1 milliion</li>
+              </ul>
+              </aside>
           </section>
           <section>
-            <!-- smart contracts and ethereum -->
+            <h2>Altcoin</h2>
+            <img src="images/cryptocurrency-logos.jpg" alt="cryptocurrency logos" class="illustration">
+            <aside class="notes">
+              <ul>
+                <li>Bitcoin enters mainstream media: Time magazine runs a story on it in April, 2011.</li>
+                <li>This is the year we start to see forks of the Bitcoin source code, starting with Namecoin and Litecoin.</li>
+                <li>Altcoin, alternative cryptocurrencies, are continuously introduced from this point.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>Volatility</h2>
+            <h4>Bitcoin reaches an all-time high price in April, 2013 and then crashes immediately afterwards.</h4>
+            <img src="images/bitcoin-april-2013.png" alt="bitcoin price chart april 2013" class="illustration">
+            <p>source: <a href="https://www.coindesk.com">coindesk.com</a></p>
+            <aside class="notes">
+              <p>That price was $233. The high on this chart is $1147.25 on Dec 3.</p>
+            </aside>
+          </section>
+          <section>
+            <h2>Blockchain 2.0: Smart contracts</h2>
+            <img src="images/documents-to-sign.jpg" alt="i was told there would be documents to sign meme" class="illustration">
+            <aside class="notes">
+              <p>Blocks in the chain begin to be used for more than a transaction record -- beyond just an exchange.</p>
+              <p>Because you can hold any data in a block, it can also hold code to execute or enforce contracts, and it can do so automatically.</p>
+              <p>Like a vending machine: you put in your money, make a selection, and you get the candy bar. No negotiation, no variation.</p>
+              <p>Adds business logic to a transaction. So bitcoin is just the transaction, but the next generation of blockchains introduce the idea of transactions plus conditions.</p>
+            </aside>
+          </section>
+          <section>
+            <h2>Etherium</h2>
+            <h3>Decentralized Applications</h3>
+              <img src="images/ethereum-logo.png" alt="ethereum logo" class="illustration">
+            <aside class="notes">
+              <p>Etherum builds a new blockchain, introduced in Jan 2014.</p>
+              <p>From their website:</p>
+              <p>"Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third-party interference."</p>
+              <p>Other blockchains start appearing: Ripple, Hyperledger. Some are public and open source; others are private. Their primary intended uses differ.</p>
+              <p>Possibilities for decentralized applications include the exchange of currency but other things as well:</p>
+              <ul>
+                <li>file storage</li>
+                <li>ridesharing</li>
+                <li>social messaging</li>
+                <li>buying/selling physical items</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>The Smart Economy</h2>
+              <img src="images/neo-logo.jpg" alt="neo logo" class="illustration">
+            <aside class="notes">
+              <p>Companies start taking advantage of blockchain tech to combine assets with identity and smart contracts</p>
+            </aside>
+          </section>
+          <section>
+            <h2>Blockchain 3.0</h2>
+            <h3>The Decentralized Web</h3>
+            <!-- <img src="images/blockstack-logo.png" alt="blockstack logo"> -->
+            <img src="images/blockstack-diagram.png" alt="blockstack diagram" class="illustration">
+            <aside class="notes">
+            <ul>
+             <li>Transnational, unlimited by geography </li>
+            <li>Freedom and empowerment -- govt restrictions and censorship can be circumvented</li>
+            <li>International business facilitated by transnational organizations that are decentralized -- not controlled by any nation-state</li>
+            <li>Information can be separated from geographical servers -- eg Wikipedia, which is subject to local jurisdiction</li>
+            <li>Namecoin (first fork of the bitcoin source code): decentralized DNS - in this system, top-level domains don’t exist anymore https://namecoin.org/ </li>
+            <li>Blockstack, from their website "Blockstack is a new internet for decentralized apps that you access through the Blockstack Browser. With Blockstack, there
+            is a new world of apps that let you own your data and maintain your privacy, security and freedom." </li>
+            </ul>
+              </aside>
           </section>
         </section>
-
+<!-- end HISTORY section -->
+<!-- BLOCKCHAIN BASICS -->
+        <section>
+          <h2>DeeDee's content goes here</h2>
+        </section>
+<!-- POSSIBILTIES AND PROBLEMS -->
+        <section>
+          <h1>Possibilites and Problems</h1>
+        </section>
       </div>
     </div>
 
