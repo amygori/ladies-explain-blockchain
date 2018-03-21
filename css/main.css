@@ -19,7 +19,7 @@
 
 .reveal .illustration-lg {
   height: 650px;
-  border: none;
+  border: 1px solid lightgray;
 }
 
 .reveal .caption {
@@ -58,4 +58,8 @@
 .reveal .logo {
   border: none;
   box-shadow: none;
+}
+
+.reveal .image--headline {
+  border: 1px dashed gray;
 }
