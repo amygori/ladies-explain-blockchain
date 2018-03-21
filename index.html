@@ -81,9 +81,9 @@
           <h2>What we'll talk about tonight</h2>
             <ul>
               <li>History of Blockchain: where did it come from?</li>
-              <li>Basics of Blockchain: what is it?</li>
+              <li>Blockchain Explained: the basics.</li>
               <li>Applications: how is blockchain being used?</li>
-              <li>Code: How does a blockchain work, exactly?</li>
+              <li>Digging Deeper: mining and consensus.</li>
               <li>Learn more!</li>
             </ul>
         </section>
@@ -286,12 +286,236 @@
         </section>
 
 <!-- BLOCKCHAIN BASICS -->
-        <section class="blockchain-basics">
-          <section>
-            <h1>Blockchain Basics</h1>
-          </section>
-        </section>
+          <section class="blockchain-basics">
+              <section>
+                  <h1>Blockchain Explained</h1>
+                  <aside class="notes">
+                      <p>Thanks for that history, Amy!! So, we have talked about bitcoin, a peer-to-peer electronic cash
+                          system</p>
+                      <p>We have seen some evolution of thought about blockchain technology and additional applications,
+                          notably Ethereum, smart contracts, etc.</p>
+                      <p>Now let's focus on the tech side.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>What is a Blockchain?</h2>
+                  <ul>
+                  <span class="fragment fade-in">
+                      <li>A digital ledger of sequential transactions that is immutable.</li>
+                  </span>
+                      <ul>
+                      <span class="fragment fade-in">
+                      <li>Each transaction is cryptographically signed.</li>
+                  </span>
+                      <span class="fragment fade-in">
+                      <li>Many copies distributed throughout network -- no need for a central authority.</li>
+                  </span>
+                      </ul>
+                  </ul>
+                  <aside class="notes">
+                      <p>_read each point_</p>
+                      <p>some argument about immutable - instead can we say incredibly difficult.</p>
+                      <p>high level, any questions?</p>
+                  </aside>
+              </section>
+              <section>
+                  <img src="images/blocks-with-chains.webp" alt="" class="illustration">
+                  <aside class="notes">
+                      <p>Let's break it down and get into the nitty gritty of how a blockchain works.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h3>A Block is basically a chunk of data.</h3>
+                  <aside class="notes">
+                      <p>A block can be thought of like a page from the ledger.</p>
+                      <p>It includes a list of recent transactions as well as a few other critical components which we
+                          will discuss shortly.</p>
+                  </aside>
+                  <span class="fragment fade-in">
+                      <p>Blocks are 'chained' together because each block includes a reference to the block that came before it.</p>
+                  </span>
+              </section>
+              <section>
+                  <img src="images/referenced-blocks.png" alt="" class="illustration">
+                  <a href="https://www.ybrikman.com/assets/img/blog/bitcoin/bitcoin-block-chain-verified.png">source</a>
+                  <aside class="notes">
+                      <p></p>
+                  </aside>
+              </section>
 
+
+              <section>
+                  <h2>Cryptographic Concepts</h2>
+                  <ul>
+                      <h3>Hashing</h3>
+                      <h3>Digital Signatures</h3>
+                  </ul>
+                  <aside class="notes">
+                      <p>I want to take a small detour and discuss Hashing and Digital Signatures,
+                          two main cryptographic concepts that underpin blockchain technology.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Hashing</h2>
+                  <img src="images/hash-function.png" alt="" class="illustration">
+                  <aside class="notes">
+                      <p>Using a hashing function or algorithm, *any* input can be represented by a fixed length outcome.</p>
+                      <p>Think of it as a fingerprint or unique identifier.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Cryptographic Hashing</h2>
+                  <ul>
+                      <li>Very fast</li>
+                      <li>Irreversible</li>
+                      <li>No collisions</li>
+                      <li>Avalanche effect</li>
+                  </ul>
+                  <aside class="notes">
+                      <p>should be very fast to compute the hash value for any size or kind of data</p>
+                      <p>it should be impossible to regenerate a message from its hash value
+                          (a brute force attack is the only option)</p>
+                      <p>it should avoid hash collisions, each message has its own hash.</p>
+                      <p>if an input is changed slightly (for example, flipping a single bit),
+                          the output changes significantly (e.g., half the output bits flip)</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Hashing Algorithms</h2>
+                  <ul>
+                      <li>Publicly Available Tools</li>
+                      <ul>
+                          <li>MD5</li>
+                          <li>Secure Hash Algorithm (SHA)</li>
+                          <ul>
+                              <li>SHA-256</li>
+                          </ul>
+                      </ul>
+                      <li>Everyday Examples</li>
+                      <ul>
+                          <li>Passwords</li>
+                          <li>Emails</li>
+                          <li>Git</li>
+                      </ul>
+                  </ul>
+                  <aside class="notes">
+                      <p>SHA-1 was replaced by SHA-2, which has 6 digests</p>
+                      <p>one of which is SHA-256, currently a common standard, and no matter how big or small
+                          your input is, the output will always have a fixed 256-bits length</p>
+                      <p>git commit identifier is a hash of all the data in the commit</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Questions?</h2>
+              </section>
+
+              <section>
+                  <h2>Digital Signatures</h2>
+                  <h4>Public Key: encrypts</h4>
+                  <h4>Private Key: decrypts</h4>
+                  <img src="images/keys.png" class="illustration">
+                  <aside class="notes">
+                      <p>This is how we prove who we are.
+                          Both keys are inseparable, and of course each pair is unique: the public key belongs
+                          to its corresponding private key and only to this one.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h3>SSL / TSL Protocols</h3>
+                  <ul>
+                      <li>Websites</li>
+                      <li>Emails</li>
+                      <li>Web Applications</li>
+                  </ul>
+                  <aside class="notes">
+                      <p>These protocols protect things like ____ all over the world.
+                          PROTECT your private key.</p>
+                      <p>Okay, back to blocks.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>image or video</h2>
+              </section>
+              <section>
+                  <h2>Components of a block</h2>
+                  <ul>
+                      <li>The data: transactions / records / etc.</li>
+                      <li>Merkle tree: hash-based data structure</li>
+                      <li>Nonce: an arbitrary number</li>
+                      <li>Previous block's hash</li>
+                      <span class="fragment fade-in">
+                        <li>A new unique hash</li>
+                      </span>
+                  </ul>
+                  <aside class="notes">
+                      <p>_read and discuss each one_</p>
+                      <p>We will discuss the Nonce in more detail when we talk about mining.</p>
+                      <p>These four components are then hashed to create . . . </p>
+                  </aside>
+              </section>
+              <section>
+              <img src="images/example-block.jpg">
+              <p>
+              <a href="https://schd.ws/hosted_files/cfsummit2017/76/CF%20SUMMIT%202017%20BLOCKCHAIN.pdf">source</a>
+              </p>
+              </section>
+              <section>
+                  <h2>Questions?</h2>
+                  <aside class="notes">
+                      <p>Do we feel comfortable with what a block is and how blocks are 'chained' together?</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Peer to Peer Network</h2>
+                  <img src="images/peer-to-peer.png" class="illustration">
+                  <aside class="notes">
+                      <p>
+                          When a block is added to the chain, a copy is sent to everyone, or every node, in the network.
+                      </p>
+                      <p>You might hear Blockchains referred to as 'trustless'. That term is ambiguous and somewhat
+                          inaccurate.
+                          The mechanisms in place help all parties in the system can reach a consensus on what
+                          the canonical truth is. That distributes or shares trust (and power) among the network’s
+                          stakeholders (e.g. developers, miners, and consumers), rather than being concentrated in a
+                          single
+                          individual or entity such as a bank, government, or financial institution. </p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Distributed</h2>
+                  <img src="images/network-models.png">
+                  <aside class="notes">
+                      <p>
+                          This model is what makes a blockchain inherently resistant to modification of the data.
+                      </p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Types of Blockchains</h2>
+                  <ul>
+                      <li>Public Blockchain</li>
+                      <li>Private Blockchain</li>
+                      <li>Permissioned Blockchain</li>
+                      <li>Consortium Blockchain</li>
+                  </ul>
+                  <aside class="notes">
+                      <p>public: for the people, by the people and of the people’
+                          Here no one is in charge and anyone can participate -- no single person has the power to validate transactions.
+                          can be used when you want your system be truly democratic. Anyone can create smart contracts,
+                          transfer money or contribute data. Here users are likely to remain anonymous.</p>
+                      <p>private: a private property of an individual or an organization. still a secure ledger but lacking
+                          the accessability and transparency of blockchain as it was imagined.</p>
+                      <p>permissioned: can be public or private, access control mechanisms and distribution can vary.</p>
+                      <p>consortium: a group of companies or representative individuals coming together and making
+                          decisions for the best benefit of the whole network.</p>
+                  </aside>
+              </section>
+
+
+
+
+          </section>
+<!-- end BLOCKCHAIN section -->
 <!-- POSSIBILTIES AND PROBLEMS -->
         <section class="possibilities and problems">
           <section>
@@ -313,6 +537,16 @@
               </ul>
             </aside>
           </section>
+            <section>
+                <p>“What the internet did for communications, blockchain will do for trusted transactions.”
+                </p>
+                <h5>— Ginni Rometty, CEO IBM</h5>
+                <aside class="notes">
+                    <p>Let this sink in . . . what role did the internet play in your life 10-15 years ago? Can you imagine
+                    a technology that has a similar impact on transactions? If she is right, this is huge and we need to be
+                    thinking of ways to help steer and participate in its implementation.</p>
+                </aside>
+            </section>
           <section>
             <h2>Real Estate</h2>
             <a href="https://qz.com/947064/sweden-is-turning-a-blockchain-powered-land-registry-into-a-reality">
@@ -469,6 +703,11 @@
             <h3>You are not alone.</h3>
               <img src="images/skeptical.gif" alt="" class="illustration">
           </section>
+            <section>
+                <h2>Blockchain is COOL!</h2>
+                <h3>but is it practical?</h3>
+                <img src="images/blockchain-FOMO.png">
+            </section>
           <section>
             <a href=""><h2>Energy use is not sustainable</h2></a>
             <p><a href="https://digiconomist.net/bitcoin-energy-consumption">Bitcoin energy consumption data</a></p>
@@ -514,14 +753,107 @@
           </section>
         </section>
 
-<!-- BLOCKCHAIN CODE -->
-        <section class="blockchain-code">
-          <section>
-            <h1>Blockchain Code</h1>
+          <!--Digging Deeper section-->
+          <section class="digging-deeper">
+              <section>
+                  <h1>Digging Deeper</h1>
+                  <aside class="notes">
+                      <p>
+                          Now that we have you imagining all the possibilities (and/or problems), let's dive back into the
+                          nitty gritty.
+                      </p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Overview</h2>
+                  <img src="images/blockchain-overview.png" class="illustration">
+                  <aside class="notes">
+                      <p>This graphic does a nice job of showing the whole process. It is framed in terms of cryptocurrency,
+                          perhaps you can imagine other kinds of transactions as well.</p>
+                      <p>Let's talk about step 4.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Mining</h2>
+                  <aside class="notes">
+                      <p>Miners validate new transactions and record them on the blockchain, or ledger</p>
+                      <p>It looks like this: </p>
+                  </aside>
+                  <span class="fragment fade-in">
+                                  <iframe src="https://giphy.com/embed/jaSDPkXTgX7ws" width="580" height="328"
+                                          frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                                    <p>
+                                      <a href="https://giphy.com/gifs/jaSDPkXTgX7ws">via GIPHY</a>
+                                    </p>
+                  </span>
+              </section>
+              <section>
+                  <h2>Miners Work</h2>
+                  <ul>
+                      <li>Update local copy of the blockchain.</li>
+                      <li>Gathering recent, unrecorded transactions from the transaction pool.</li>
+                      <li>Create a candidate block.</li>
+                      <li>Add their coinbase transaction.</li>
+                      <li>Calculate transaction fees.</li>
+                      <li>Proof of Work</li>
+                  </ul>
+                  <aside class="notes">
+                      <p>most recent copy, someone could have mined a block while you were working on one.
+                          abandon that one and start again</p>
+                      <p>rewards come in two forms: coinbase transaction, this actually "creates" coins, or transaction fees.
+                          explain bitcoin example.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Proof of Work</h2>
+                  <h4>A difficult mathematical problem based on a cryptographic hash algorithm.</h4>
+                  <ul>
+                      <li>Requires time and resources.</li>
+                      <li>Level of difficulty varies.</li>
+                  </ul>
+                  <p>Find and add the correct nonce to all the other block components to achieve a
+                      hash deemed valid (e.g. 72 leading zeros).
+                  </p>
+                  <aside class="notes">
+                      <p>basically looking for a random nonce. Mining fields or pools, hard for individuals to compete.
+                      as mining gets faster, for bitcoin, the difficulty increases programmatically.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>looking for the proof of work</h2>
+                  <img src="images/mining.png" class="illustration">
+                  <aside class="notes">
+                      <p>_talk about image_</p>
+                      <p>_next slide is last_</p>
+                      <p>zoom out and end our time talking about the ecosystem of a blockchain</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Ecosystem of a blockchain</h2>
+                  <ul>
+                      <li>Node Application</li>
+                      <li>Shared Ledger</li>
+                      <li>Consensus Algorithm</li>
+                      <li>Virtual Machine</li>
+                  </ul>
+                  <aside class="notes">
+                      <p>once one has a node application one can participate in the respective blockchain ecosystem</p>
+                      <p>The distributed ledger is a data structure managed inside the node. once application running, you can
+                          view the respective ledger (or blockchain) contents for that ecosystem.</p>
+                      <p>rules of the game, verification process (mining), longest chain, etc</p>
+                      <p>A VM is an abstraction of a machine, held inside a machine.it can understand a wider range of
+                          instructions making it possible to manage the state of a digital contracts</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>That's the basics!</h2>
+                  <img src="images/blockchain-general.jpg">
+              </section>
           </section>
-        </section>
+          <!--end of Digging Deeper-->
 
-  <!-- CONCLUSION -->
+
+          <!-- CONCLUSION -->
         <section class="conclusion">
           <section>
             <h1>Where to go from here</h1>
@@ -581,6 +913,8 @@
             <h3>QUESTIONS?</h3>
           </section>
         </section>
+<!-- END OF POSSIBILTIES AND PROBLEMS -->
+
       </div>
     </div>
 
