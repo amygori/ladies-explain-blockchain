@@ -81,9 +81,9 @@
           <h2>What we'll talk about tonight</h2>
             <ul>
               <li>History of Blockchain: where did it come from?</li>
-              <li>Basics of Blockchain: what is it?</li>
+              <li>Blockchain Explained: the basics.</li>
               <li>Applications: how is blockchain being used?</li>
-              <li>Code: How does a blockchain work, exactly?</li>
+              <li>Digging Deeper: mining and consensus.</li>
               <li>Learn more!</li>
             </ul>
         </section>
@@ -537,6 +537,16 @@
               </ul>
             </aside>
           </section>
+            <section>
+                <p>“What the internet did for communications, blockchain will do for trusted transactions.”
+                </p>
+                <h5>— Ginni Rometty, CEO IBM</h5>
+                <aside class="notes">
+                    <p>Let this sink in . . . what role did the internet play in your life 10-15 years ago? Can you imagine
+                    a technology that has a similar impact on transactions? If she is right, this is huge and we need to be
+                    thinking of ways to help steer and participate in its implementation.</p>
+                </aside>
+            </section>
           <section>
             <h2>Real Estate</h2>
             <a href="https://qz.com/947064/sweden-is-turning-a-blockchain-powered-land-registry-into-a-reality">
@@ -693,6 +703,11 @@
             <h3>You are not alone.</h3>
               <img src="images/skeptical.gif" alt="" class="illustration">
           </section>
+            <section>
+                <h2>Blockchain is COOL!</h2>
+                <h3>but is it practical?</h3>
+                <img src="images/blockchain-FOMO.png">
+            </section>
           <section>
             <a href=""><h2>Energy use is not sustainable</h2></a>
             <p><a href="https://digiconomist.net/bitcoin-energy-consumption">Bitcoin energy consumption data</a></p>
@@ -742,9 +757,93 @@
           <section class="digging-deeper">
               <section>
                   <h1>Digging Deeper</h1>
+                  <aside class="notes">
+                      <p>
+                          Now that we have you imagining all the possibilities (and/or problems), let's dive back into the
+                          nitty gritty.
+                      </p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Overview</h2>
+                  <img src="images/blockchain-overview.png" class="illustration">
+                  <aside class="notes">
+                      <p>This graphic does a nice job of showing the whole process. It is framed in terms of cryptocurrency,
+                          perhaps you can imagine other kinds of transactions as well.</p>
+                      <p>Let's talk about step 4.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Mining</h2>
+                  <aside class="notes">
+                      <p>Miners validate new transactions and record them on the blockchain, or ledger</p>
+                      <p>It looks like this: </p>
+                  </aside>
+                  <span class="fragment fade-in">
+                                  <iframe src="https://giphy.com/embed/jaSDPkXTgX7ws" width="580" height="328"
+                                          frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                                    <p>
+                                      <a href="https://giphy.com/gifs/jaSDPkXTgX7ws">via GIPHY</a>
+                                    </p>
+                  </span>
+              </section>
+              <section>
+                  <h2>Miners Work</h2>
+                  <ul>
+                      <li>Update local copy of the blockchain.</li>
+                      <li>Gathering recent, unrecorded transactions from the transaction pool.</li>
+                      <li>Create a candidate block.</li>
+                      <li>Add their coinbase transaction.</li>
+                      <li>Calculate transaction fees.</li>
+                      <li>Proof of Work</li>
+                  </ul>
+                  <aside class="notes">
+                      <p>most recent copy, someone could have mined a block while you were working on one.
+                          abandon that one and start again</p>
+                      <p>rewards come in two forms: coinbase transaction, this actually "creates" coins, or transaction fees.
+                          explain bitcoin example.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>Proof of Work</h2>
+                  <h4>A difficult mathematical problem based on a cryptographic hash algorithm.</h4>
+                  <ul>
+                      <li>Requires time and resources.</li>
+                      <li>Level of difficulty varies.</li>
+                  </ul>
+                  <p>Find and add the correct nonce to all the other block components to achieve a
+                      hash deemed valid (e.g. 72 leading zeros).
+                  </p>
+                  <aside class="notes">
+                      <p>basically looking for a random nonce. Mining fields or pools, hard for individuals to compete.
+                      as mining gets faster, for bitcoin, the difficulty increases programmatically.</p>
+                  </aside>
+              </section>
+              <section>
+                  <h2>looking for the proof of work</h2>
+                  <img src="images/mining.png" class="illustration">
+                  <aside class="notes">
+                      <p>_talk about image_</p>
+                      <p>_next slide is last_</p>
+                      <p>zoom out and end our time talking about the ecosystem of a blockchain</p>
+                  </aside>
               </section>
               <section>
                   <h2>Ecosystem of a blockchain</h2>
+                  <ul>
+                      <li>Node Application</li>
+                      <li>Shared Ledger</li>
+                      <li>Consensus Algorithm</li>
+                      <li>Virtual Machine</li>
+                  </ul>
+                  <aside class="notes">
+                      <p>once one has a node application one can participate in the respective blockchain ecosystem</p>
+                      <p>The distributed ledger is a data structure managed inside the node. once application running, you can
+                          view the respective ledger (or blockchain) contents for that ecosystem.</p>
+                      <p>rules of the game, verification process (mining), longest chain, etc</p>
+                      <p>A VM is an abstraction of a machine, held inside a machine.it can understand a wider range of
+                          instructions making it possible to manage the state of a digital contracts</p>
+                  </aside>
               </section>
           </section>
           <!--end of Digging Deeper-->
